@@ -6,7 +6,10 @@ class Rectangle {
 private:
 	double dlinaa, dlinab;
 public:
-	
+	Rectangle setrect(Rectangle rect);
+	void printrect(Rectangle rect);
+	double rectperimeter(Rectangle rect);
+	double rectsurf(Rectangle rect);
 };
 
 #endif
