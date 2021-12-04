@@ -2,15 +2,11 @@
 #ifndef Rectangle_h
 #define Rectangle_h
 
-struct Rectangle
-{
-	double a;
-	double b;
+class Rectangle {
+private:
+	double dlinaa, dlinab;
+public:
+	
 };
-
-void rectenter(struct Rectangle* rect);
-void rectprint(struct Rectangle rect);
-double rectvolume(struct Rectangle);
-double rectperimeter(struct Rectangle);
 
 #endif
