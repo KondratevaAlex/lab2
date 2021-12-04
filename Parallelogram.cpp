@@ -3,3 +3,32 @@
 #include <math.h>
 #include "Parallelogram.h"
 
+Parallelogram Parallelogram::setpar(Parallelogram par)
+{
+    printf("\nƒлина стороны а: ");
+    scanf("%lf", par.dlinaa);
+    printf("\nƒлина стороны b: ");
+    scanf("%lf", par.dlinab);
+    printf("\n”гол между сторонами a и b (в градусах): ");
+    scanf("%lf", par.ygolalp);
+    return par;
+}
+
+void Parallelogram::printpar(Parallelogram par)
+{
+    printf("\nƒлины сторон а, b и угол в градусах между ними соответственно: %lf, %lf, %lf", par.dlinaa, par.dlinab, par.ygolalp);
+}
+
+double Parallelogram::parperimeter(Parallelogram par)
+{
+    double perimetr = 0;
+    perimetr = (par.dlinaa + par.dlinab) * 2;
+    return perimetr;
+}
+
+double Parallelogram::parsurf(Parallelogram par)
+{
+    double volume = 0;
+    volume = par.dlinaa * par.dlinab * par.ygolalp;
+    return volume;
+}
