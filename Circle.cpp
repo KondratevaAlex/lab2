@@ -30,3 +30,8 @@ double Circle::circsurf(Circle circ)
     volume = M_PI * pow(circ.dlinar, 2);
     return volume;
 }
+
+void Circle::addAnotherInfo(ObjectInfo* someinfo)
+{
+    another_info = someinfo;
+}

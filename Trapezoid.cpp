@@ -36,3 +36,8 @@ double Trapezoid::trapsurf(Trapezoid trap)
     volume = ((trap.dlinaa * trap.dlinab) / 2) * trap.dlinah;
     return volume;
 }
+
+void Trapezoid::addAnotherInfo(ObjectInfo* someinfo)
+{
+    another_info = someinfo;
+}

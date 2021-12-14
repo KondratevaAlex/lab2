@@ -33,3 +33,8 @@ double Triangle::trisurf(Triangle trian)
 	volume = sqrt(perim * (perim - trian.dlinaa) * (perim - trian.dlinab) * (perim - trian.dlinac));
 	return volume;
 }
+
+void Triangle::addAnotherInfo(ObjectInfo* someinfo)
+{
+	another_info = someinfo;
+}

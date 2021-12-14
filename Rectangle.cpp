@@ -29,3 +29,8 @@ double Rectangle::rectsurf(Rectangle rect)
 	volume = rect.dlinaa * rect.dlinab;
 	return volume;
 }
+
+void Rectangle::addAnotherInfo(ObjectInfo* someinfo)
+{
+	another_info = someinfo;
+}

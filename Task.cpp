@@ -7,6 +7,7 @@
 #include "Parallelogram.h"
 #include "Circle.h"
 #include "Trapezoid.h"
+#include "ObjectInfo.h"
 
 int main()
 {
@@ -21,10 +22,13 @@ int main()
 		{
 		case 1: {
 			Triangle* arr = new Triangle[2];
+			ObjectInfo* obj = new ObjectInfo[2];
 			for (int i = 0; i < 2; i++) {
 				printf("\nВведите данные %d треугольника:\n", i + 1);
 				arr[i] = arr->settri(arr[i]);
+				obj[i] = obj->setInfo(obj[i]);
 				arr->printtri(arr[i]);
+				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].triperimeter(arr[i]);
 				anssur[i] = arr[i].trisurf(arr[i]);
 			}
@@ -36,10 +40,13 @@ int main()
 		}
 		case 2: {
 			Rectangle* arr = new Rectangle[2];
+			ObjectInfo* obj = new ObjectInfo[2];
 			for (int i = 0; i < 2; i++) {
 				printf("\nВведите данные %d прямоугольника:\n", i + 1);
 				arr[i] = arr->setrect(arr[i]);
+				obj[i] = obj->setInfo(obj[i]);
 				arr->printrect(arr[i]);
+				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].rectperimeter(arr[i]);
 				anssur[i] = arr[i].rectsurf(arr[i]);
 			}
@@ -51,11 +58,14 @@ int main()
 		}
 		case 3: {
 			Parallelogram* arr = new Parallelogram[2];
+			ObjectInfo* obj = new ObjectInfo[2];
 			for (int i = 0; i < 2; i++) {
 				printf("\nВведите данные %d :\n", i + 1);
 				printf("\nВведите данные %d параллелограмма:\n", i + 1);
 				arr[i] = arr->setpar(arr[i]);
+				obj[i] = obj->setInfo(obj[i]);
 				arr->printpar(arr[i]);
+				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].parperimeter(arr[i]);
 				anssur[i] = arr[i].parsurf(arr[i]);
 			}
@@ -67,10 +77,13 @@ int main()
 		}
 		case 4: {
 			Trapezoid* arr = new Trapezoid[2];
+			ObjectInfo* obj = new ObjectInfo[2];
 			for (int i = 0; i < 2; i++) {
 				printf("\nВведите данные %d трапеции:\n", i + 1);
 				arr[i] = arr->settrap(arr[i]);
+				obj[i] = obj->setInfo(obj[i]);
 				arr->printtrap(arr[i]);
+				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].trapperimeter(arr[i]);
 				anssur[i] = arr[i].trapsurf(arr[i]);
 			}
@@ -82,10 +95,13 @@ int main()
 		}
 		case 5: {
 			Circle* arr = new Circle[2];
+			ObjectInfo* obj = new ObjectInfo[2];
 			for (int i = 0; i < 2; i++) {
 				printf("\nВведите данные %d круга:\n", i + 1);
 				arr[i] = arr->setcirc(arr[i]);
+				obj[i] = obj->setInfo(obj[i]);
 				arr->printcirc(arr[i]);
+				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].circperimeter(arr[i]);
 				anssur[i] = arr[i].circsurf(arr[i]);
 			}

@@ -32,3 +32,8 @@ double Parallelogram::parsurf(Parallelogram par)
     volume = par.dlinaa * par.dlinab * par.ygolalp;
     return volume;
 }
+
+void Parallelogram::addAnotherInfo(ObjectInfo* someinfo)
+{
+    another_info = someinfo;
+}
