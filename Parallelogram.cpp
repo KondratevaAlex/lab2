@@ -26,10 +26,9 @@ double Parallelogram::parperimeter(Parallelogram par)
     return perimetr;
 }
 
-double Parallelogram::parsurf(Parallelogram par)
+double& Parallelogram::parsurf(double& volume)
 {
-    double volume = 0;
-    volume = par.dlinaa * par.dlinab * par.ygolalp;
+    volume = dlinaa * dlinab * ygolalp;
     return volume;
 }
 

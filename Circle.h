@@ -12,7 +12,7 @@ public:
 	Circle setcirc(Circle circ);
 	void printcirc(Circle circ);
 	double circperimeter(Circle circ);
-	double circsurf(Circle circ);
+	double& circsurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };
 

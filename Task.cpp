@@ -30,7 +30,7 @@ int main()
 				arr->printtri(arr[i]);
 				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].triperimeter(arr[i]);
-				anssur[i] = arr[i].trisurf(arr[i]);
+				anssur[i] = arr[i].trisurf(ansper[i]);
 			}
 			difper = ansper[0] / ansper[1];
 			difsur = anssur[0] / anssur[1];
@@ -48,7 +48,7 @@ int main()
 				arr->printrect(arr[i]);
 				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].rectperimeter(arr[i]);
-				anssur[i] = arr[i].rectsurf(arr[i]);
+				anssur[i] = arr[i].rectsurf(ansper[i]);
 			}
 			difper = ansper[0] / ansper[1];
 			difsur = anssur[0] / anssur[1];
@@ -67,7 +67,7 @@ int main()
 				arr->printpar(arr[i]);
 				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].parperimeter(arr[i]);
-				anssur[i] = arr[i].parsurf(arr[i]);
+				anssur[i] = arr[i].parsurf(ansper[i]);
 			}
 			difper = ansper[0] / ansper[1];
 			difsur = anssur[0] / anssur[1];
@@ -85,7 +85,7 @@ int main()
 				arr->printtrap(arr[i]);
 				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].trapperimeter(arr[i]);
-				anssur[i] = arr[i].trapsurf(arr[i]);
+				anssur[i] = arr[i].trapsurf(ansper[i]);
 			}
 			difper = ansper[0] / ansper[1];
 			difsur = anssur[0] / anssur[1];
@@ -103,7 +103,7 @@ int main()
 				arr->printcirc(arr[i]);
 				obj->printInfo(obj[i]);
 				ansper[i] = arr[i].circperimeter(arr[i]);
-				anssur[i] = arr[i].circsurf(arr[i]);
+				anssur[i] = arr[i].circsurf(ansper[i]);
 			}
 			difper = ansper[0] / ansper[1];
 			difsur = anssur[0] / anssur[1];

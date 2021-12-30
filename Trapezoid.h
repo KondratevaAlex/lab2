@@ -11,7 +11,7 @@ public:
 	Trapezoid settrap(Trapezoid trap);
 	void printtrap(Trapezoid trap);
 	double trapperimeter(Trapezoid trap);
-	double trapsurf(Trapezoid trap);
+	double& trapsurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };
 

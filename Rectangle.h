@@ -11,7 +11,7 @@ public:
 	Rectangle setrect(Rectangle rect);
 	void printrect(Rectangle rect);
 	double rectperimeter(Rectangle rect);
-	double rectsurf(Rectangle rect);
+	double& rectsurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };
 

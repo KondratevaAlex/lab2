@@ -11,7 +11,7 @@ public:
 	Triangle settri(Triangle trian);
 	void printtri(Triangle trian);
 	double triperimeter(Triangle trian);
-	double trisurf(Triangle trian);
+	double& trisurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };
 

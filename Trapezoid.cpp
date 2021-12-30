@@ -30,10 +30,9 @@ double Trapezoid::trapperimeter(Trapezoid trap)
     return perimetr;
 }
 
-double Trapezoid::trapsurf(Trapezoid trap)
+double& Trapezoid::trapsurf(double &volume)
 {
-    double volume = 0;
-    volume = ((trap.dlinaa * trap.dlinab) / 2) * trap.dlinah;
+    volume = ((dlinaa * dlinab) / 2) * dlinah;
     return volume;
 }
 

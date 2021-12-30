@@ -26,11 +26,11 @@ double Triangle::triperimeter(Triangle trian)
 	return perimetr;
 }
 
-double Triangle::trisurf(Triangle trian)
+double& Triangle::trisurf(double& volume)
 {
-	double volume = 0, perim = 0;
-	perim = (trian.dlinaa + trian.dlinab + trian.dlinac) / 2;
-	volume = sqrt(perim * (perim - trian.dlinaa) * (perim - trian.dlinab) * (perim - trian.dlinac));
+	double perim = 0;
+	perim = (dlinaa + dlinab + dlinac) / 2;
+	volume = sqrt(perim * (perim - dlinaa) * (perim - dlinab) * (perim - dlinac));
 	return volume;
 }
 

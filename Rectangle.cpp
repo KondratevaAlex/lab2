@@ -23,10 +23,9 @@ double Rectangle::rectperimeter(Rectangle rect)
 	return perimetr;
 }
 
-double Rectangle::rectsurf(Rectangle rect)
+double& Rectangle::rectsurf(double& volume)
 {
-	double volume = 0;
-	volume = rect.dlinaa * rect.dlinab;
+	volume = dlinaa * dlinab;
 	return volume;
 }
 
