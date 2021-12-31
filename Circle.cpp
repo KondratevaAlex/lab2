@@ -17,17 +17,15 @@ void Circle::printcirc(Circle circ)
     printf("\nДлина радиуса r: %lf", circ.dlinar);
 }
 
-double Circle::circperimeter(Circle circ)
+double* Circle::circperimeter(double* perimetr)
 {
-    double perimetr = 0;
-    perimetr = 2 * M_PI * pow(circ.dlinar, 2);
+    *perimetr = 2 * M_PI * pow(dlinar, 2);
     return perimetr;
 }
 
-double Circle::circsurf(Circle circ)
+double& Circle::circsurf(double &volume)
 {
-    double volume = 0;
-    volume = M_PI * pow(circ.dlinar, 2);
+    volume = M_PI * pow(dlinar, 2);
     return volume;
 }
 

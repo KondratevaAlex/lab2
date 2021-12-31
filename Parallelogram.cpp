@@ -19,10 +19,9 @@ void Parallelogram::printpar(Parallelogram par)
     printf("\nДлины сторон а, b и угол в градусах между ними соответственно: %lf, %lf, %lf", par.dlinaa, par.dlinab, par.ygolalp);
 }
 
-double Parallelogram::parperimeter(Parallelogram par)
+double* Parallelogram::parperimeter(double* perimetr)
 {
-    double perimetr = 0;
-    perimetr = (par.dlinaa + par.dlinab) * 2;
+    *perimetr = (dlinaa + dlinab) * 2;
     return perimetr;
 }
 

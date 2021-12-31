@@ -10,7 +10,7 @@ private:
 public:
 	Rectangle setrect(Rectangle rect);
 	void printrect(Rectangle rect);
-	double rectperimeter(Rectangle rect);
+	double* rectperimeter(double* perimetr);
 	double& rectsurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };

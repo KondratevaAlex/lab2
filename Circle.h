@@ -11,7 +11,7 @@ private:
 public:
 	Circle setcirc(Circle circ);
 	void printcirc(Circle circ);
-	double circperimeter(Circle circ);
+	double* circperimeter(double *perimetr);
 	double& circsurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };

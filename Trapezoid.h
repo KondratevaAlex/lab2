@@ -10,7 +10,7 @@ private:
 public:
 	Trapezoid settrap(Trapezoid trap);
 	void printtrap(Trapezoid trap);
-	double trapperimeter(Trapezoid trap);
+	double* trapperimeter(double* perimetr);
 	double& trapsurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };

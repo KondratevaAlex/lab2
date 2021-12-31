@@ -10,7 +10,7 @@ private:
 public:
 	Triangle settri(Triangle trian);
 	void printtri(Triangle trian);
-	double triperimeter(Triangle trian);
+	double* triperimeter(double* perimetr);
 	double& trisurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };

@@ -10,7 +10,7 @@ private:
 public:
 	Parallelogram setpar(Parallelogram par);
 	void printpar(Parallelogram par);
-	double parperimeter(Parallelogram par);
+	double* parperimeter(double* perimetr);
 	double& parsurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
 };

@@ -23,10 +23,9 @@ void Trapezoid::printtrap(Trapezoid trap)
     printf("\nДлина оснований a и b, сторон c и d и высоты h соответственно: %lf, %lf, %lf, %lf, %lf", trap.dlinaa, trap.dlinab, trap.dlinac, trap.dlinad, trap.dlinah);
 }
 
-double Trapezoid::trapperimeter(Trapezoid trap)
+double* Trapezoid::trapperimeter(double* perimetr)
 {
-    double perimetr = 0;
-    perimetr = trap.dlinaa + trap.dlinab + trap.dlinac + trap.dlinad;
+    *perimetr = dlinaa + dlinab + dlinac + dlinad;
     return perimetr;
 }
 

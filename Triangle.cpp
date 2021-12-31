@@ -19,10 +19,9 @@ void Triangle::printtri(Triangle trian)
 	printf("\nДлины сторон а, b и c соответственно: %lf, %lf, %lf", trian.dlinaa, trian.dlinab, trian.dlinac);
 }
 
-double Triangle::triperimeter(Triangle trian)
+double* Triangle::triperimeter(double* perimetr)
 {
-	double perimetr = 0;
-	perimetr = trian.dlinaa + trian.dlinab + trian.dlinac;
+	*perimetr = dlinaa + dlinab + dlinac;
 	return perimetr;
 }
 

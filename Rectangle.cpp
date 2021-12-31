@@ -16,10 +16,9 @@ void Rectangle::printrect(Rectangle rect)
 	printf("\nДлины сторон а и b соответственно: %lf, %lf", rect.dlinaa, rect.dlinab);
 }
 
-double Rectangle::rectperimeter(Rectangle rect)
+double* Rectangle::rectperimeter(double* perimetr)
 {
-	double perimetr = 0;
-	perimetr = (rect.dlinaa * rect.dlinab) * 2;
+	*perimetr = (dlinaa * dlinab) * 2;
 	return perimetr;
 }
 
