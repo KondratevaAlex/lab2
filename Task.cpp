@@ -8,14 +8,22 @@
 #include "Circle.h"
 #include "Trapezoid.h"
 #include "ObjectInfo.h"
+#include "Student.h"
+
 
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 
+	Student Student;
+	Student.set();
+	Student.printInfo();
+	Student.getFIO();
+
 	do {
 		int choice;
 		double ansper[2], anssur[2], difper, difsur;
+		
 		printf("\nВыберите вид фигур для сравнения:\n1 - Треугольники\n2 - Прямоугольники(квадраты)\n3 - Параллелограммы\n4 - Трапеции\n5 - Круги\n:::");
 		scanf("%d", &choice);
 		switch (choice)
