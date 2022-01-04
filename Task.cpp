@@ -58,6 +58,20 @@ int main()
 				arr[i].rectperimeter(&ansper[i]);
 				anssur[i] = arr[i].rectsurf(anssur[i]);
 			}
+			Rectangle Plus = arr[0] + arr[1];
+			printf("\nУнарный плюс: Plus = M + K : ");
+			Plus.printrect(Plus);
+
+			Plus = ++arr[0];
+			printf("\nПрефиксный инкремент: Plus = ++M : ");
+			Plus.printrect(Plus);
+
+			Plus = arr[0]++;
+			printf("\nПостфиксный инкремент: Plus = K++ : ");
+			Plus.printrect(Plus);
+			Plus = arr[0];
+			printf("Plus = K :");
+			Plus.printrect(Plus);
 			difper = ansper[0] / ansper[1];
 			difsur = anssur[0] / anssur[1];
 			printf("\n\nОтношение периметров пряямоугольников друг к другу: %lf\n", difper);

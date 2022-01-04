@@ -32,3 +32,26 @@ void Rectangle::addAnotherInfo(ObjectInfo* someinfo)
 {
 	another_info = someinfo;
 }
+
+Rectangle Rectangle::operator+(const Rectangle& another)
+{
+	Rectangle result;
+	result.dlinaa = this->dlinaa + another.dlinaa;
+	result.dlinab = this->dlinab + another.dlinab;
+	return result;
+}
+
+Rectangle& Rectangle::operator++()
+{
+	this->dlinaa += 1;
+	this->dlinab += 1;
+	return *this;
+}
+
+Rectangle& Rectangle::operator++(int)
+{
+	Rectangle tmp(*this);
+	this->dlinaa++;
+	this->dlinab++;
+	return tmp;
+}

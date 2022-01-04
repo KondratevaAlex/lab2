@@ -13,6 +13,10 @@ public:
 	double* rectperimeter(double* perimetr);
 	double& rectsurf(double &volume);
 	void addAnotherInfo(ObjectInfo* someinfo);
+
+	Rectangle operator+(const Rectangle& another);
+	Rectangle& operator++();
+	Rectangle& operator++(int);
 };
 
 #endif
