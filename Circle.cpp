@@ -5,6 +5,16 @@
 
 #define M_PI   3.14159265358979323846
 
+Circle::Circle()
+{
+    dlinar = 0.0;
+}
+
+Circle::Circle(double noll)
+{
+    dlinar = noll;
+}
+
 Circle Circle::setcirc(Circle circ)
 {
     printf("\nДлина радиуса r: ");

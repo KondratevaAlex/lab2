@@ -3,6 +3,23 @@
 #include <math.h>
 #include "Triangle.h"
 
+Triangle::Triangle()
+{
+	dlinaa = dlinab = dlinac = 0.0;
+}
+
+Triangle::Triangle(double noll)
+{
+	dlinaa = dlinab = dlinac = noll;
+}
+
+Triangle::Triangle(double _dlinaa, double _dlinab, double _dlinac)
+{
+	dlinaa = _dlinaa;
+	dlinab = _dlinab;
+	dlinac = _dlinac;
+}
+
 Triangle Triangle::settri(Triangle trian)
 {
 	printf("\nДлина стороны а: ");

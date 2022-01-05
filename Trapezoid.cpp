@@ -3,6 +3,25 @@
 #include <math.h>
 #include "Trapezoid.h"
 
+Trapezoid::Trapezoid()
+{
+    dlinaa = dlinab = dlinac = dlinad = dlinah = 0.0;
+}
+
+Trapezoid::Trapezoid(double noll)
+{
+    dlinaa = dlinab = dlinac = dlinad = dlinah = noll;
+}
+
+Trapezoid::Trapezoid(double _dlinaa, double _dlinab, double _dlinac, double _dlinad, double _dlinah)
+{
+    dlinaa = _dlinaa;
+    dlinab = _dlinab;
+    dlinac = _dlinac;
+    dlinad = _dlinad;
+    dlinah = _dlinah;
+}
+
 Trapezoid Trapezoid::settrap(Trapezoid trap)
 {
     printf("\nДлина основания а: ");

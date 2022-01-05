@@ -13,6 +13,7 @@ private:
 	static int count;
 public:
 	Student();
+	Student(string name);
 	Student(string name, string patronymic, string surname);
 	void set();
 	void printInfo();

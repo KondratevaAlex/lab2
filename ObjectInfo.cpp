@@ -7,6 +7,11 @@ ObjectInfo::ObjectInfo()
 	colour = day = month = year = 0;
 }
 
+ObjectInfo::ObjectInfo(int noll)
+{
+	colour = day = month = year = noll;
+}
+
 ObjectInfo::ObjectInfo(int colour, int day, int month, int year)
 {
 	this->colour = colour;

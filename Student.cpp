@@ -10,7 +10,15 @@ Student::Student() {
 	patronymic = "Unknown";
 	surname = "Unknown";
 	count++;
-};
+}
+Student::Student(string name)
+{
+	this->name = name;
+	patronymic = "None";
+	surname = "None";
+	count++;
+}
+;
 
 Student::Student(string name, string patronymic, string surname) {
 	this->name.assign(name);

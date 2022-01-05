@@ -8,6 +8,9 @@ private:
 	double dlinaa, dlinab, ygolalp;
 	ObjectInfo* another_info;
 public:
+	Parallelogram();
+	Parallelogram(double noll);
+	Parallelogram(double _dlinaa, double _dlinab, double _ygolalp);
 	Parallelogram setpar(Parallelogram par);
 	void printpar(Parallelogram par);
 	double* parperimeter(double* perimetr);

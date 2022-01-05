@@ -3,6 +3,23 @@
 #include <math.h>
 #include "Parallelogram.h"
 
+Parallelogram::Parallelogram()
+{
+    dlinaa = dlinab = ygolalp = 0.0;
+}
+
+Parallelogram::Parallelogram(double noll)
+{
+    dlinaa = dlinab = ygolalp = noll;
+}
+
+Parallelogram::Parallelogram(double _dlinaa, double _dlinab, double _ygolalp)
+{
+    dlinaa = _dlinaa;
+    dlinab = _dlinab;
+    ygolalp = _ygolalp;
+}
+
 Parallelogram Parallelogram::setpar(Parallelogram par)
 {
     printf("\nДлина стороны а: ");

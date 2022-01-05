@@ -8,6 +8,9 @@ private:
 	double dlinaa, dlinab, dlinac;
 	ObjectInfo* another_info;
 public:
+	Triangle();
+	Triangle(double noll);
+	Triangle(double _dlinaa, double _dlinab, double _dlinac);
 	Triangle settri(Triangle trian);
 	void printtri(Triangle trian);
 	double* triperimeter(double* perimetr);

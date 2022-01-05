@@ -8,6 +8,9 @@ private:
 	double dlinaa, dlinab;
 	ObjectInfo* another_info;
 public:
+	Rectangle();
+	Rectangle(double noll);
+	Rectangle(double _dlinaa, double _dlinab);
 	Rectangle setrect(Rectangle rect);
 	void printrect(Rectangle rect);
 	double* rectperimeter(double* perimetr);

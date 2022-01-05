@@ -2,6 +2,22 @@
 #include <stdio.h>
 #include "Rectangle.h"
 
+Rectangle::Rectangle()
+{
+	dlinaa = dlinab = 0.0;
+}
+
+Rectangle::Rectangle(double noll)
+{
+	dlinaa = dlinab = noll;
+}
+
+Rectangle::Rectangle(double _dlinaa, double _dlinab)
+{
+	dlinaa = _dlinaa;
+	dlinab = _dlinab;
+}
+
 Rectangle Rectangle::setrect(Rectangle rect)
 {
 	printf("\nДлина стороны а: ");

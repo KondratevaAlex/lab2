@@ -9,6 +9,8 @@ private:
 	double dlinar;
 	ObjectInfo* another_info;
 public:
+	Circle();
+	Circle(double noll);
 	Circle setcirc(Circle circ);
 	void printcirc(Circle circ);
 	double* circperimeter(double *perimetr);
