@@ -29,6 +29,10 @@ int main()
     int counter = Student::getCount();
     printf("Количество студентов: %d", counter);
 
+	Triangle arrtri[3] = {1.0, 2.0, 3.0};
+	for (int i = 0; i < 3; i++)
+		arrtri[i].printtri(arrtri[i]);
+
 	do {
 		int choice;
 		double ansper[2], anssur[2], difper, difsur;
