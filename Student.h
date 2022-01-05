@@ -8,14 +8,14 @@ class Student
 {
 private:
 	string name;
-	string patronymic; // îò÷åñòâî
-	string surname; // ôàìèëèÿ
+	string patronymic;
+	string surname;
 public:
 	Student();
-	Student(string name, string patronymic, string surname); //èñïîëüçîâàíèå ìåòîäà asign()
+	Student(string name, string patronymic, string surname);
 	void set();
 	void printInfo();
-	void getFIO(); //èíäåêñàöèÿ
+	void getFIO();
 
 };
 
