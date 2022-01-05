@@ -22,8 +22,14 @@ int main()
 
 	Student Student2("Oleg", "Vladimirovich", "Popov");
 	Student2.printInfo();
+	Student newstudent(Student2);
+	printf("Конструктор копирования: ");
+	newstudent.printInfo();
 
 	Student Student3;
+	Student3.printInfo();
+	Student3 = newstudent;
+	printf("Оператор присваивания: ");
 	Student3.printInfo();
 
     int counter = Student::getCount();
