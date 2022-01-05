@@ -10,12 +10,14 @@ private:
 	string name;
 	string patronymic;
 	string surname;
+	static int count;
 public:
 	Student();
 	Student(string name, string patronymic, string surname);
 	void set();
 	void printInfo();
 	void getFIO();
+	static int getCount();
 
 };
 

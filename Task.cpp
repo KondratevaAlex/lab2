@@ -9,16 +9,25 @@
 #include "Trapezoid.h"
 #include "ObjectInfo.h"
 #include "Student.h"
+using namespace std;
 
 
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 
-	Student Student;
-	Student.set();
-	Student.printInfo();
-	Student.getFIO();
+	Student student1;
+    student1.set();
+    student1.printInfo();
+    student1.getFIO();
+
+    Student student2;
+    student2.set();
+    student2.printInfo();
+    student2.getFIO();
+
+    int counter = Student::getCount();
+    printf("Количество студентов: %d", counter);
 
 	do {
 		int choice;
