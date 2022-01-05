@@ -16,15 +16,15 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 
-	Student student1;
-    student1.set();
-    student1.printInfo();
-    student1.getFIO();
+	Student* Student1;
+	Student1 = new Student("Ivanov");
+	Student1->printInfo();
 
-    Student student2;
-    student2.set();
-    student2.printInfo();
-    student2.getFIO();
+	Student Student2("Oleg", "Vladimirovich", "Popov");
+	Student2.printInfo();
+
+	Student Student3;
+	Student3.printInfo();
 
     int counter = Student::getCount();
     printf("Количество студентов: %d", counter);
