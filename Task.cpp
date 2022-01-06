@@ -39,6 +39,29 @@ int main()
 	for (int i = 0; i < 3; i++)
 		arrtri[i].printtri(arrtri[i]);
 
+	Rectangle Array[5];
+	printf("\nВведите координаты 5 точек: ");
+	for (int i = 0; i < 5; i++) {
+		Array[i].setrect(Array[i]);
+	}
+	printf("Одномерный массив точек: ");
+	for (int i = 0; i < 5; i++) {
+		Array[i].printrect(Array[i]);
+	}
+
+	printf("\nВведите координаты 6 точек: ");
+	Rectangle newArray[2][2];
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			newArray[i][j].setrect(newArray[i][j]);
+		}
+	}
+	printf("Двумерный массив точек");
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++)
+			newArray[i][j].printrect(newArray[i][j]);
+	}
+
 	do {
 		int choice;
 		double ansper[2], anssur[2], difper, difsur;
