@@ -1,6 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <typeinfo>
+#include <iostream>
 #include "Rectangle.h"
+using namespace std;
 
 Rectangle::Rectangle()
 {
@@ -21,9 +24,25 @@ Rectangle::Rectangle(double _dlinaa, double _dlinab)
 Rectangle Rectangle::setrect(Rectangle rect)
 {
 	printf("\nДлина стороны а: ");
-	scanf("%lf", &rect.dlinaa);
+	try {
+		scanf("%lf", &rect.dlinaa);
+		if (dlinaa < 0) {
+			throw "Неверный диапазон.";
+		}
+	}
+	catch (const char* ex) {
+		cout << "Исключение: " << ex << endl;
+	}
 	printf("\nДлина стороны b: ");
-	scanf("%lf", &rect.dlinab);
+	try {
+		scanf("%lf", &rect.dlinab);
+		if (dlinab < 0) {
+			throw "Неверный диапазон.";
+		}
+	}
+	catch (const char* ex) {
+		cout << "Исключение: " << ex << endl;
+	}
 	return rect;
 }
 
