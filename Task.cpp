@@ -41,7 +41,7 @@ int main()
 		arrtri[i].printtri(arrtri[i]);
 
 	Teacher teacher;
-	teacher.set();
+	teacher.set("Victor", "Sergeevich", "Troitsky", 18);
 	teacher.printInfo();
 	teacher.estimate();
 
