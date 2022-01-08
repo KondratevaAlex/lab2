@@ -9,6 +9,7 @@
 #include "Trapezoid.h"
 #include "ObjectInfo.h"
 #include "Student.h"
+#include "Teacher.h"
 using namespace std;
 
 
@@ -38,6 +39,11 @@ int main()
 	Triangle arrtri[3] = {1.0, 2.0, 3.0};
 	for (int i = 0; i < 3; i++)
 		arrtri[i].printtri(arrtri[i]);
+
+	Teacher teacher;
+	teacher.set();
+	teacher.printInfo();
+	teacher.estimate();
 
 	Rectangle Array[5];
 	printf("\nВведите координаты 5 точек: ");
