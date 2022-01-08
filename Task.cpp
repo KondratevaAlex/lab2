@@ -40,8 +40,7 @@ int main()
 	for (int i = 0; i < 3; i++)
 		arrtri[i].printtri(arrtri[i]);
 
-	Teacher teacher;
-	teacher.set("Victor", "Sergeevich", "Troitsky", 18);
+	Teacher teacher("Victor", "Sergeevich", "Troitsky", 18);
 	teacher.printInfo();
 	teacher.estimate();
 

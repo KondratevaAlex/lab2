@@ -8,6 +8,7 @@ private:
     int experience;
 
 public:
+    Teacher(string name, string patronymic, string surname, int experience);
     void estimate();
     void set(string name, string patronymic, string surname, int experience);
 };

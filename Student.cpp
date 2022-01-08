@@ -25,7 +25,22 @@ Student::Student(string name, string patronymic, string surname) {
 	this->patronymic.assign(patronymic);
 	this->surname.assign(surname);
 	count++;
-};
+}
+Student::Student(const Student& st)
+{
+	this->name = st.name;
+	this->patronymic = st.patronymic;
+	this->surname = st.surname;
+	count++;
+}
+Student& Student::operator=(const Student& st)
+{
+	this->name = st.name;
+	this->patronymic = st.patronymic;
+	this->surname = st.surname;
+	return *this;
+}
+;
 
 void Student::set() {
 	cout << "Введите имя: ";
@@ -39,7 +54,7 @@ void Student::set() {
 
 void Student::printInfo() {
 	string info = name + " " + patronymic + " " + surname;
-	cout << "Студент: " << info << endl;
+	cout << "\n " << info << endl;
 };
 
 void Student::getFIO() {
