@@ -10,6 +10,7 @@ protected:
 	string name;
 	string patronymic;
 	string surname;
+	string group;
 	static int count;
 public:
 	Student();
@@ -20,6 +21,8 @@ public:
 	string getName();
 	string getPatronymic();
 	string getSurname();
+	virtual void setAnotherInformation();
+	virtual void getAnotherInformation();
 	void set();
 	void printInfo();
 	void getFIO();

@@ -30,6 +30,7 @@ void Teacher::operator =(Student b) {
 void operator << (ostream& o, Teacher r)
 {
 	cout << "\n" << r.name << " " << r.patronymic << " " << r.surname << " Стаж в годах: " << r.experience << endl;
+	r.getAnotherInformation();
 };
 
 Teacher operator >> (istream& o, Teacher& r)
@@ -37,3 +38,12 @@ Teacher operator >> (istream& o, Teacher& r)
 	cin >> r.name >> r.patronymic >> r.surname >> r.experience;
 	return r;
 };
+void Teacher::setAnotherInformation() {
+	cout << "Ученая степень преподавателя: ";
+	cin >> AcademicDegree;
+}
+
+
+void Teacher::getAnotherInformation() {
+	cout << "Ученая степень преподавателя: " << AcademicDegree << endl;
+}

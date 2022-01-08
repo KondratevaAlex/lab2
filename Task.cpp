@@ -18,31 +18,35 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 
-	Student* Student1;
-	Student1 = new Student("Ivanov");
-	cout << Student1;
-	Student Student2("Oleg", "Vladimirovich", "Popov");
-	cout << Student2;
-	Student newstudent(Student2);
-	printf("Конструктор копирования: ");
-	cout << newstudent;
+	//Student* Student1;
+	//Student1 = new Student("Ivanov");
+	//cout << Student1;
+	//Student Student2("Oleg", "Vladimirovich", "Popov");
+	//cout << Student2;
+	//Student newstudent(Student2);
+	//printf("Конструктор копирования: ");
+	//cout << newstudent;
 
-	Student Student3;
-	cout << Student3;
-	Student3 = newstudent;
-	printf("Оператор присваивания: ");
-	cout << Student3;
+	//Student Student3;
+	//cout << Student3;
+	//Student3 = newstudent;
+	//printf("Оператор присваивания: ");
+	//cout << Student3;
 
-    int counter = Student::getCount();
-    printf("Количество студентов: %d", counter);
+    //int counter = Student::getCount();
+    //printf("Количество студентов: %d", counter);
 
-	Triangle arrtri[3] = {1.0, 2.0, 3.0};
-	for (int i = 0; i < 3; i++)
-		arrtri[i].printtri(arrtri[i]);
+	//Triangle arrtri[3] = {1.0, 2.0, 3.0};
+	//for (int i = 0; i < 3; i++)
+		//arrtri[i].printtri(arrtri[i]);
 
 	Teacher teacher("Victor", "Sergeevich", "Troitsky", 18);
+	teacher.setAnotherInformation();
 	cout << teacher;
-	teacher.estimate();
+	//teacher.estimate();
+	Student student("Victor", "Vladimirovich", "Babarykin");
+	student.setAnotherInformation();
+	cout << student;
 
 	Rectangle Array[5];
 	printf("\nВведите координаты 5 точек: ");

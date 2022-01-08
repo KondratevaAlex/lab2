@@ -55,6 +55,7 @@ void Student::set() {
 void operator << (ostream& o, Student r)
 {
 	cout << r.name << " " << r.patronymic << " " << r.surname << endl;
+	r.getAnotherInformation();
 }
 
 Student operator >> (istream& o, Student& r)
@@ -82,4 +83,12 @@ string Student::getPatronymic() {
 
 string Student::getSurname() {
 	return surname;
+}
+void Student::setAnotherInformation() {
+	cout << "Группа студента: ";
+	cin >> group;
+}
+
+void Student::getAnotherInformation() {
+	cout << "Группа студента: " << group << endl;
 }
