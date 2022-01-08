@@ -40,13 +40,14 @@ int main()
 	//for (int i = 0; i < 3; i++)
 		//arrtri[i].printtri(arrtri[i]);
 
-	Teacher teacher("Victor", "Sergeevich", "Troitsky", 18);
-	teacher.setAnotherInformation();
-	cout << teacher;
+	Teacher* t;
+	t = new Teacher("Victor", "Sergeevich", "Troitsky", 18);
+	Student* st;
+	st = new Student("Victor", "Vladimirovich", "Babarykin");
+	st = t;
+	st->setAnotherInformation();
+	st->getAnotherInformation();
 	//teacher.estimate();
-	Student student("Victor", "Vladimirovich", "Babarykin");
-	student.setAnotherInformation();
-	cout << student;
 
 	Rectangle Array[5];
 	printf("\nВведите координаты 5 точек: ");

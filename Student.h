@@ -21,8 +21,8 @@ public:
 	string getName();
 	string getPatronymic();
 	string getSurname();
-	virtual void setAnotherInformation();
-	virtual void getAnotherInformation();
+	void setAnotherInformation();
+	void getAnotherInformation();
 	void set();
 	void printInfo();
 	void getFIO();

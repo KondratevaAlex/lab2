@@ -14,6 +14,6 @@ public:
     void  operator =(Student b);
     friend void operator << (ostream& o, Teacher r);
     friend Teacher operator >> (istream& i, Teacher& r);
-    void setAnotherInformation() override;
-    void getAnotherInformation() override;
+    void setAnotherInformation();
+    void getAnotherInformation();
 };

@@ -47,3 +47,9 @@ void Teacher::setAnotherInformation() {
 void Teacher::getAnotherInformation() {
 	cout << "Ученая степень преподавателя: " << AcademicDegree << endl;
 }
+Teacher& Teacher::operator= (const Teacher& st) {
+	this->name = st.name;
+	this->patronymic = st.patronymic;
+	this->surname = st.surname;
+	return *this;
+}
