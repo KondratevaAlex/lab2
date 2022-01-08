@@ -6,5 +6,5 @@ using namespace std;
 void Teacher::estimate() {
 	cout << "\nќценка за работу: ";
 	cin >> mark;
-	cout << "ќценка за работу " << mark << endl;
+	cout << name << " " << surname << ": " << "ќценка за работу " << mark << endl;
 };

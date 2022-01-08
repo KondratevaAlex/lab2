@@ -6,7 +6,7 @@ using namespace std;
 
 class Student
 {
-private:
+protected:
 	string name;
 	string patronymic;
 	string surname;
@@ -15,10 +15,13 @@ public:
 	Student();
 	Student(string name);
 	Student(string name, string patronymic, string surname);
+	Student(const Student& st);
+	Student& operator=(const Student& st);
 	void set();
 	void printInfo();
 	void getFIO();
 	static int getCount();
+
 
 };
 
