@@ -66,3 +66,14 @@ void Student::getFIO() {
 int Student::getCount() {
 	return count;
 };
+string Student::getName() {
+	return name;
+}
+
+string Student::getPatronymic() {
+	return patronymic;
+}
+
+string Student::getSurname() {
+	return surname;
+}

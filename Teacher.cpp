@@ -22,3 +22,8 @@ void Teacher::set(string name, string patronymic, string surname, int experience
 	Student::set();
 	this->experience = experience;
 };
+void Teacher::operator =(Student b) {
+	this->name = b.getName();
+	this->patronymic = b.getPatronymic();
+	this->surname = b.getSurname();
+};

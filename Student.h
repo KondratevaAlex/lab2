@@ -17,6 +17,9 @@ public:
 	Student(string name, string patronymic, string surname);
 	Student(const Student& st);
 	Student& operator=(const Student& st);
+	string getName();
+	string getPatronymic();
+	string getSurname();
 	void set();
 	void printInfo();
 	void getFIO();
