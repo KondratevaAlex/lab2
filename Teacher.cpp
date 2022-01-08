@@ -27,3 +27,13 @@ void Teacher::operator =(Student b) {
 	this->patronymic = b.getPatronymic();
 	this->surname = b.getSurname();
 };
+void operator << (ostream& o, Teacher r)
+{
+	cout << "\n" << r.name << " " << r.patronymic << " " << r.surname << " Стаж в годах: " << r.experience << endl;
+};
+
+Teacher operator >> (istream& o, Teacher& r)
+{
+	cin >> r.name >> r.patronymic >> r.surname >> r.experience;
+	return r;
+};

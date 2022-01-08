@@ -24,7 +24,8 @@ public:
 	void printInfo();
 	void getFIO();
 	static int getCount();
-
+	friend void operator << (ostream& o, Student r);
+	friend Student operator >> (istream& i, Student& r);
 
 };
 

@@ -52,10 +52,16 @@ void Student::set() {
 
 };
 
-void Student::printInfo() {
-	string info = name + " " + patronymic + " " + surname;
-	cout << "\n " << info << endl;
-};
+void operator << (ostream& o, Student r)
+{
+	cout << r.name << " " << r.patronymic << " " << r.surname << endl;
+}
+
+Student operator >> (istream& o, Student& r)
+{
+	cin >> r.name >> r.patronymic >> r.surname;
+	return r;
+}
 
 void Student::getFIO() {
 	char fio[3] = { surname[0], patronymic[0], name[0] };

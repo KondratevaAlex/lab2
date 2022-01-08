@@ -12,4 +12,6 @@ public:
     void estimate();
     void set(string name, string patronymic, string surname, int experience);
     void  operator =(Student b);
+    friend void operator << (ostream& o, Teacher r);
+    friend Teacher operator >> (istream& i, Teacher& r);
 };

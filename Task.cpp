@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <conio.h>
+#include <iostream>
 #include "Rectangle.h"
 #include "Triangle.h"
 #include "Parallelogram.h"
@@ -19,19 +20,18 @@ int main()
 
 	Student* Student1;
 	Student1 = new Student("Ivanov");
-	Student1->printInfo();
-
+	cout << Student1;
 	Student Student2("Oleg", "Vladimirovich", "Popov");
-	Student2.printInfo();
+	cout << Student2;
 	Student newstudent(Student2);
 	printf("Конструктор копирования: ");
-	newstudent.printInfo();
+	cout << newstudent;
 
 	Student Student3;
-	Student3.printInfo();
+	cout << Student3;
 	Student3 = newstudent;
 	printf("Оператор присваивания: ");
-	Student3.printInfo();
+	cout << Student3;
 
     int counter = Student::getCount();
     printf("Количество студентов: %d", counter);
@@ -41,7 +41,7 @@ int main()
 		arrtri[i].printtri(arrtri[i]);
 
 	Teacher teacher("Victor", "Sergeevich", "Troitsky", 18);
-	teacher.printInfo();
+	cout << teacher;
 	teacher.estimate();
 
 	Rectangle Array[5];
